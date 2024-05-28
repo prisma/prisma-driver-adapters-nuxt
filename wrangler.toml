@@ -1,0 +1,8 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "prisma-driver-adapters-nuxt"
+compatibility_date = "2024-04-05"
+
+[[d1_databases]]
+binding = "D1_DATABASE" # i.e. available in your Worker on env.D1_DATABASE
+database_name = "nuxt-db"
+database_id = "4a023080-f43e-4706-be1e-41cbea0bd9f7"
