@@ -4,7 +4,10 @@ import nitroCloudflareBindings from 'nitro-cloudflare-dev'
 export default defineNuxtConfig({
   modules: [nitroCloudflareBindings],
   nitro: {
-    preset: 'cloudflare-pages'
+    preset: 'cloudflare-pages',
+    experimental: {
+      wasm: true,
+    },
   },
   devtools: { enabled: true },
 })
